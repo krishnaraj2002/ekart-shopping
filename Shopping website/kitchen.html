@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Things Store</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff512f, #dd2476); 
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .item {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            position: relative; 
+        }
+        .item:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .discount {
+            font-weight: bold;
+            color: #ffd700; 
+        }
+        .offers {
+            font-style: italic;
+            color: #48c6ef; 
+        }
+        .rating {
+            color: #ffd700; 
+        }
+        .rating::before {
+            content: "★";
+        }
+        .item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .buy-now-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .buy-now-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kitchen-knife/j/q/8/1-l62-large-lellow-7-85-original-imagp3f33dufxnpp.jpeg?q=70" alt="Kitchen Knife Set">
+            <h2>Kitchen Knife Set</h2>
+            <div class="price">₹500</div>
+            <div class="discount">Discount: 10%</div>
+            <div class="offers">Free shipping on orders over ₹1000</div>
+            <div class="rating">Rating: 4.5</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+            
+        </div>
+        
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/l2xmqvk0/coffee-maker/y/r/c/modern-cucina-cm-1-0-5-cups-coffee-maker-modern-cucina-pigeon-original-image63hydk7bzg5.jpeg?q=70" alt="Coffee Maker">
+            <h2>Coffee Maker</h2>
+            <div class="price">₹1500</div>
+            <div class="discount">Discount: 15%</div>
+            <div class="offers">Buy one get one free on selected items</div>
+            <div class="rating">Rating: 4.7</div><br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/pot-pan/e/o/k/ruby-24-impex-original-imagh7gvqgce78yn.jpeg?q=70" alt="Non-stick Frying Pan">
+            <h2>Non-stick Frying Pan</h2>
+            <div class="price">₹800</div>
+            <div class="discount">Discount: 5%</div>
+            <div class="offers">Limited time offer: 20% off on second purchase</div>
+            <div class="rating">Rating: 4.2</div>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mixer-grinder-juicer/l/e/d/-original-imaghehsw8qrhnbp.jpeg?q=70" alt="Mixer">
+            <h2>Mixer</h2>
+            <div class="price">₹2000</div>
+            <div class="discount">Discount: 12%</div>
+            <div class="offers">Free accessory kit included</div>
+            <div class="rating">Rating: 4.8</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/jxp08sw0/pop-up-toaster/s/k/9/flipkart-smartbuy-ta01101-ta01101-original-imafhrhfnnh58vny.jpeg?q=70" alt="Toaster">
+            <h2>Toaster</h2>
+            <div class="price">₹1200</div>
+            <div class="discount">Discount: 8%</div>
+            <div class="offers">Limited time offer: Free delivery</div>
+            <div class="rating">Rating: 4.3</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/k7qinbk0/hand-blender/u/r/7/kent-blndr012-original-imafpx2y2hvmnynf.jpeg?q=70" alt="Blender">
+            <h2>Blender</h2>
+            <div class="price">₹900</div>
+            <div class="discount">Discount: 5%</div>
+            <div class="offers">Special discount for first-time buyers</div>
+            <div class="rating">Rating: 4.6</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-kettle/y/o/o/ktx-1-8-l-dlx-ktx-1-8-l-dlx-bajaj-original-imagjzzzqvcf8h48.jpeg?q=70" alt="Electric Kettle">
+            <h2>Electric Kettle</h2>
+            <div class="price">₹600</div>
+            <div class="discount">Discount: 10%</div>
+            <div class="offers">Limited stock available</div>
+            <div class="rating">Rating: 4.0</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/pressure-cooker/c/u/x/no-1-5-liter-pressure-cooker-snapple-original-imagyae4wyjzvng5.jpeg?q=70" alt="Pressure Cooker">
+            <h2>Pressure Cooker</h2>
+            <div class="price">₹1300</div>
+            <div class="discount">Discount: 7%</div>
+            <div class="offers">Special offer: Free recipe book</div>
+            <div class="rating">Rating: 4.5</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-cooker/2/z/z/-original-imagzh3ffharzw5q.jpeg?q=70" alt="Rice Cooker">
+            <h2>Rice Cooker</h2>
+            <div class="price">₹1100</div>
+            <div class="discount">Discount: 10%</div>
+            <div class="offers">Limited time offer: Extra rice scoop</div>
+            <div class="rating">Rating: 4.4</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mixer-grinder-juicer/i/0/m/-original-imaghy69gbrjwkvz.jpeg?q=70" alt="Mixer Grinder">
+            <h2>Mixer Grinder</h2>
+            <div class="price">₹2500</div>
+            <div class="discount">Discount: 10%</div>
+            <div class="offers">Extended warranty available</div>
+            <div class="rating">Rating: 4.7</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/l1fc0i80/cutting-board/p/r/n/kitchen-chopping-cutting-slicing-board-with-handle-for-cutting-original-imagczv4cfcqn8v7.jpeg?q=70" alt="Cutting Board">
+            <h2>Cutting Board</h2>
+            <div class="price">₹300</div>
+            <div class="discount">Discount: 5%</div>
+            <div class="offers">Buy one get one 50% off</div>
+            <div class="rating">Rating: 4.2</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/jxuq07k0/food-processor/7/k/a/fp-3811-fp-3811-food-processor-usha-original-imafg7t2fvdxnxzy.jpeg?q=70" alt="Food Processor">
+            <h2>Food Processor</h2>
+            <div class="price">₹1800</div>
+            <div class="discount">Discount: 15%</div>
+            <div class="offers">Special offer: Free shipping</div>
+            <div class="rating">Rating: 4.6</div>
+            <br>
+            <br>
+            <br>
+            <button class="buy-now-btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

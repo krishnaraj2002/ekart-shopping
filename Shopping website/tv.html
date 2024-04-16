@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands TV Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #FF6F61, #8B0E6D);
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .tv-item {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s;
+        }
+        .tv-item:hover {
+            transform: translateY(-5px);
+        }
+        .tv-details {
+            flex: 1;
+        }
+        .tv-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .tv-price {
+            font-size: 1.1em;
+        }
+        .tv-discount {
+            font-size: 1em;
+            color: #F4D06F;
+        }
+        .tv-offers {
+            font-size: 0.9em;
+            color: #96D38C;
+        }
+        .tv-rating {
+            font-size: 1.2em;
+        }
+        .tv-rating span {
+            color: #FFD700;
+        }
+        .tv-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .tv-item {
+                padding: 15px;
+            }
+            .tv-name {
+                font-size: 1em;
+            }
+            .tv-price {
+                font-size: 0.9em;
+            }
+            .tv-discount {
+                font-size: 0.8em;
+            }
+            .tv-offers {
+                font-size: 0.7em;
+            }
+            .tv-rating {
+                font-size: 1em;
+            }
+            .buy-button {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/q/o/8/-original-imagyk8tsbgtfudu.jpeg?q=70" alt="Samsung TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Samsung 55" Smart TV</div>
+                <div class="tv-price">₹ 50,000</div>
+                <div class="tv-discount">-10% off</div>
+                <div class="tv-offers">Extra 1 year warranty</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/z/f/y/-original-imagxaygvfpjcjfn.jpeg?q=70" alt="LG TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">LG 65" 4K Ultra HD TV</div>
+                <div class="tv-price">₹ 80,000</div>
+                <div class="tv-discount">-15% off</div>
+                <div class="tv-offers">Free installation</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/y/0/0/-original-imagvgcge6n7ewzc.jpeg?q=70" alt="Sony TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Sony 50" Full HD TV</div>
+                <div class="tv-price">₹ 45,000</div>
+                <div class="tv-discount">-5% off</div>
+                <div class="tv-offers">Free shipping</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/v/2/c/-original-imagrh9mg4fxvrtg.jpeg?q=70" alt="Toshiba TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Toshiba 43" LED TV</div>
+                <div class="tv-price">₹ 35,000</div>
+                <div class="tv-discount">-8% off</div>
+                <div class="tv-offers">Free wall mount</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/q/l/x/th-32ls670dx-panasonic-original-imaggz53pxf8guqt.jpeg?q=70" alt="Panasonic TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Panasonic 32" HD Ready TV</div>
+                <div class="tv-price">₹ 20,000</div>
+                <div class="tv-discount">-12% off</div>
+                <div class="tv-offers">Free HDMI cable</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/7/h/l/ua43cu8000-ua43cu8000-samsung-original-imagsshqvurvejqg.jpeg?q=70" alt="Philips TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Philips 50" 4K UHD TV</div>
+                <div class="tv-price">₹ 55,000</div>
+                <div class="tv-discount">-10% off</div>
+                <div class="tv-offers">Free soundbar</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/z/f/y/-original-imagxaygvfpjcjfn.jpeg?q=70" alt="Hisense TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Hisense 55" Smart TV</div>
+                <div class="tv-price">₹ 48,000</div>
+                <div class="tv-discount">-6% off</div>
+                <div class="tv-offers">Free delivery</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/o/q/m/-original-imagt2rq8hj55u9k.jpeg?q=70" alt="Sharp TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Sharp 40" Full HD TV</div>
+                <div class="tv-price">₹ 30,000</div>
+                <div class="tv-discount">-8% off</div>
+                <div class="tv-offers">Free 2-year warranty</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/r/d/v/-original-imagyxpqh3htfzhg.jpeg?q=70" alt="Vizio TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Vizio 60" 4K Ultra HD TV</div>
+                <div class="tv-price">₹ 75,000</div>
+                <div class="tv-discount">-10% off</div>
+                <div class="tv-offers">Free wall mount and installation</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        
+        <div class="tv-item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/e/4/3/-original-imagunxqqvhqzdgy.jpeg?q=70" alt="Haier TV" class="tv-img">
+            <div class="tv-details">
+                <div class="tv-name">Haier 32" HD Ready TV</div>
+                <div class="tv-price">₹ 18,000</div>
+                <div class="tv-discount">-10% off</div>
+                <div class="tv-offers">Free shipping</div>
+            </div>
+            <div class="tv-rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+            </div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

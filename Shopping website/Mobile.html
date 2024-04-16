@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones Web Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #556270, #ff6b6b, #556270);
+            background-size: 600% 600%;
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background-color: #3f51b5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            margin-top: 10px;
+        }
+
+        .product p {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .discount {
+            color: #28a745;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .buy-now-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #45a049;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <img src="img\logo.png" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="product-grid">
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70" alt="Mobile Phone 1">
+                <h2>Apple 15</h2>
+                <p>Brand: Apple</p>
+                <p>Camera: 12 MP</p>
+                <p>Battery: 4000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;20,999</p>
+                <p class="discount">Discount: 10%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/x/z/5/galaxy-m14-5g-sm-m146b-samsung-original-imagzvnkwn2c72fu.jpeg?q=70" alt="Mobile Phone 2">
+                <h2>Samsung</h2>
+                <p>Brand: Samsung</p>
+                <p>Camera: 16 MP</p>
+                <p>Battery: 4500 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★★</span></p>
+                <p class="price">&#8377;25,999</p>
+                <p class="discount">Discount: 15%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/l/j/-original-imagzrfwkeu2zazh.jpeg?q=70" alt="Mobile Phone 3">
+                <h2>Xiaomi</h2>
+                <p>Brand: Xiaomi</p>
+                <p>Camera: 20 MP</p>
+                <p>Battery: 5000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;30,999</p>
+                <p class="discount">Discount: 10%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70" alt="Mobile Phone 4">
+                <h2>Realme</h2>
+                <p>Brand: Realme</p>
+                <p>Camera: 24 MP</p>
+                <p>Battery: 6000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★</span></p>
+                <p class="price">&#8377;35,999</p>
+                <p class="discount">Discount: 5%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+           
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/7/k/-original-imagtxvur9yrxvru.jpeg?q=70" alt="Mobile Phone 5">
+                <h2>OnePlus</h2>
+                <p>Brand: OnePlus</p>
+                <p>Camera: 20 MP</p>
+                <p>Battery: 4500 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★☆☆</span></p>
+                <p class="price">&#8377;29,999</p>
+                <p class="discount">Discount: 8%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/6/4/r/-original-imagwxvqs6f88zjh.jpeg?q=70" alt="Mobile Phone 6">
+                <h2>Oppo</h2>
+                <p>Brand: Oppo</p>
+                <p>Camera: 16 MP</p>
+                <p>Battery: 4000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;22,999</p>
+                <p class="discount">Discount: 12%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/u/n/-original-imagzjhwtfthcmzz.jpeg?q=70" alt="Mobile Phone 7">
+                <h2>Vivo</h2>
+                <p>Brand: Vivo</p>
+                <p>Camera: 12 MP</p>
+                <p>Battery: 4000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;19,999</p>
+                <p class="discount">Discount: 10%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/w/j/g24-pb1c0000in-motorola-original-imagxm3afhhxpqz9.jpeg?q=70" alt="Mobile Phone 8">
+                <h2> Motorola</h2>
+                <p>Brand: Motorola</p>
+                <p>Camera: 24 MP</p>
+                <p>Battery: 5000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★★</span></p>
+                <p class="price">&#8377;32,999</p>
+                <p class="discount">Discount: 15%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/k3ncakw0pkrrdj/mobile/p/3/f/huawei-y9-prime-2019-stk-l22-original-imafgf3hmg4yf8sk.jpeg?q=70" alt="Mobile Phone 9">
+                <h2>Huawei</h2>
+                <p>Brand: Huawei</p>
+                <p>Camera: 16 MP</p>
+                <p>Battery: 4000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★</span></p>
+                <p class="price">&#8377;24,999</p>
+                <p class="discount">Discount: 5%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/ko7idu80/mobile/e/2/h/w41-lm-k610im-lg-original-imag2prtqu8f56y9.jpeg?q=70" alt="Mobile Phone 10">
+                <h2>LG</h2>
+                <p>Brand: LG</p>
+                <p>Camera: 20 MP</p>
+                <p>Battery: 4500 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;27,999</p>
+                <p class="discount">Discount: 8%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/a/f/g42-5g-ta-1586-nokia-original-imagunrqsdh8ghvv.jpeg?q=70" alt="Mobile Phone 11">
+                <h2>Nokia</h2>
+                <p>Brand: Nokia</p>
+                <p>Camera: 16 MP</p>
+                <p>Battery: 4000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★</span></p>
+                <p class="price">&#8377;23,999</p>
+                <p class="discount">Discount: 5%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/j8ndea80/mobile/p/x/q/sony-xperia-xa1-plus-g3416-original-imaeym7pgxzqfrjg.jpeg?q=70" alt="Mobile Phone 12">
+                <h2>Sony</h2>
+                <p>Brand: Sony</p>
+                <p>Camera: 24 MP</p>
+                <p>Battery: 5000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★★</span></p>
+                <p class="price">&#8377;33,999</p>
+                <p class="discount">Discount: 15%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/2/y/-original-imaggswcffkgcupp.jpeg?q=70" alt="Mobile Phone 13">
+                <h2>Google pixel</h2>
+                <p>Brand: Google</p>
+                <p>Camera: 16 MP</p>
+                <p>Battery: 4500 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;28,999</p>
+                <p class="discount">Discount: 8%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/jx0prbk0/mobile/y/t/v/asus-6z-zs630kl-2a014ww-original-imafhkqythzfmjp8.jpeg?q=70" alt="Mobile Phone 14">
+                <h2>Asus</h2>
+                <p>Brand: Asus</p>
+                <p>Camera: 20 MP</p>
+                <p>Battery: 4000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★☆</span></p>
+                <p class="price">&#8377;26,999</p>
+                <p class="discount">Discount: 10%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/312/312/mobile/d/h/u/htc-desire-816g-octa-core-original-imaeyu35za2zh3pn.jpeg?q=70" alt="Mobile Phone 15">
+                <h2>HTC</h2>
+                <p>Brand: HTC</p>
+                <p>Camera: 24 MP</p>
+                <p>Battery: 5000 mAh</p>
+                <p>Charger: Fast Charger</p>
+                <p>Rating: <span class="rating">★★★★★</span></p>
+                <p class="price">&#8377;32,999</p>
+                <p class="discount">Discount: 15%</p>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
